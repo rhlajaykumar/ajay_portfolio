@@ -150,6 +150,43 @@ header .header-cases {
     display: none;
 }
 
+@media only screen and (min-width: 1000px){
+    header {
+        height: 80px;
+    }
+
+    header .header-brand {
+        margin: 0;
+        text-align: left;
+        padding: 0 20px 0 20px;
+        float: left;
+        line-height: 80px;
+    }
+    header nav ul {
+        display: inline-block;
+        margin: 0;
+        float: right;
+
+    }
+    
+    header nav ul li {
+        display: inline-block;
+        float: left;
+
+    }
+
+    header nav ul li a {
+        font-family: 'Acme', sans-serif;
+        font-size: 16px;
+        color: #111;
+        padding: 16px;
+        line-height: 80px;
+
+
+    }
+
+}
+
 /* INDEX */
 
 .index-banner {
@@ -202,4 +239,25 @@ header .header-cases {
     text-align: center;
     background-color: #f2f2f2;
     color: #111;
+}
+
+footer {
+    background-color: #111;
+}
+
+footer .footer-links li {
+    display: block;
+    text-align: center;
+
+
+}
+footer .footer-links li a {
+    font-family: arial;
+    line-height: 30px;
+    color: #fff;
+    
+}
+footer .footer-content li {
+    display: none;
+    
 }
