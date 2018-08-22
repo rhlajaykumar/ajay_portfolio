@@ -106,10 +106,6 @@ input, select {
     text-decoration: none;
 }
 
-body {
-    background-color: #f3f3f3;
-}
-
 header{
     background-color: #fff;
     width: 100%;
@@ -193,4 +189,17 @@ header .header-cases {
     text-align: center;
     text-shadow: 2px 2px 8px #111;
 
+}
+
+.index-link a {
+    display: block;
+    font-family: arial;
+    font-weight: 600;
+    margin: 15px 15px 0;
+    width: calc(100% - 30px);
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #111;
 }
