@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* header */
@@ -39,6 +39,16 @@ body {
 #showcase .content-wrap p{
     padding-top:2vh;
     color: white;
+ }
+
+ /* Header desktop*/
+
+ @media screen and (min-width: 1000px){
+    #showcase .content-wrap img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 5vw;
+    }
  }
 
  /* nav bar */
@@ -89,12 +99,27 @@ body {
 #section-about .card{
     padding: 30px;
 }
+/* About desktop version*/
+@media screen and (min-width: 1000px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #section-about .card{
+        display: inline-block;
+        padding: 30px;
+    }
+    #section-about img {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 5vw;
+}
 
 /* Section project */
 
 #section-projects {
     background-color: rgb(166, 207, 226);
-    width: 100%;
+    width: 100px;
     height: auto;
 }
 #section-projects .project-head{
@@ -110,7 +135,7 @@ body {
 }
 
 #section-projects .project-img {
-    width: 100%;
+    width: 100vw;
 }
 #section-projects ul {
     padding: 0;
@@ -142,6 +167,8 @@ body {
 #section-projects p {
     padding: 10px;
 }
+
+
 
 /* Section social media */
 
@@ -215,11 +242,3 @@ body {
 #section-contact .licence p{
     line-height: 30px;
 }
-
-
-
-
-
-
-
-
