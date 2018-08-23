@@ -57,7 +57,7 @@ body {
     
 }
 
-/* Section A */
+/* Section About */
 #section-about {
     background-color: rgb(166, 207, 226);
     text-align: center;
@@ -74,6 +74,59 @@ body {
 }
 #section-about .card{
     padding: 30px;
+}
+
+/* Section project */
+
+#section-projects {
+    background-color: rgb(166, 207, 226);
+    width: 100%;
+    height: auto;
+}
+#section-projects .project-head{
+    position: relative;
+}
+#section-projects>.project-head>h2{
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size: 2em;
+    text-shadow: 10px white;
+
+}
+
+#section-projects .project-img {
+    width: 100%;
+}
+#section-projects ul {
+    padding: 0;
+    list-style: none;
+}
+#section-projects li {
+    background-color: white;
+    width: 95vw;
+    height: auto;
+    border: 0;
+    margin: 0 auto;
+}
+#section-projects .card-content {
+    
+    height: auto;
+    border: 0;
+    margin: 10px auto;
+}
+
+#section-projects ul img{
+    width: 100%;
+    height: 60vw;
+}
+
+#section-projects .card-heading {
+    padding: 0 10px;
+}
+
+#section-projects p {
+    padding: 10px;
 }
 
 
