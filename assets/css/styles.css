@@ -52,9 +52,23 @@ body {
     margin: 1px gray solid;
     color:black;
     text-decoration: none;
-    padding-left: 10px;
+    padding: 10px;
     line-height: 10vh;
     
+}
+
+#nav-bar ul {
+    list-style: none;
+    display: inline-block;
+}
+#nav-bar ul li {
+    display: inline-block;
+}
+
+#nav-bar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
 /* Section About */
@@ -170,35 +184,35 @@ body {
 
 /* Footer */
 
-#contact {
+#section-contact {
     width: 100vw;
     background: rgb(79, 187, 79);
     height: auto;
 }
 
-#contact .details{
+#section-contact .details{
     width: 100vw;
     height: 120px;
     
 }
-#contact .details h2{
+#section-contact .details h2{
     padding: 10px;
     color: white;
     
 }
-#contact .details p{
+#section-contact .details p{
     padding: 10px 0 0 30px;
     color: white;
 }
 
-#contact .licence{
+#section-contact .licence{
     background: rgb(0, 68, 0);
     width:100vw;
     height: 30px;
     color: white;
     padding: 5px;
 }
-#contact .licence p{
+#section-contact .licence p{
     line-height: 30px;
 }
 
