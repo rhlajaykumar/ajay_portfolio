@@ -129,4 +129,48 @@ body {
     padding: 10px;
 }
 
+/* Section social media */
+
+#section-social .content-wrap{
+    background:  rgb(166, 207, 226);
+    height: auto;
+}
+#section-social .content-wrap .content-head{
+    position: relative;
+    height: 60vw;
+}
+#section-social .content-wrap .content-head img{
+    width: 100%;
+    height: 60vw;
+}
+#section-social .content-wrap .content-head h2{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    color: white;
+}
+#section-social .content-wrap .content ul{
+    list-style: none;
+    height: auto;
+    padding: 10px 5vw 10px 5vw;
+}
+
+#section-social .content-wrap .content a{
+    text-decoration: none;
+    color:black;
+    padding: 20px 10px 20px 10px;
+}
+#section-social .content-wrap .content li{
+    display: block;
+    background: white;
+    border: 1px rgb(240, 237, 237) solid;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+
+
+
+
 
