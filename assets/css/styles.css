@@ -168,6 +168,41 @@ body {
     margin: 0 auto;
 }
 
+/* Footer */
+
+#contact {
+    width: 100vw;
+    background: rgb(79, 187, 79);
+    height: auto;
+}
+
+#contact .details{
+    width: 100vw;
+    height: 120px;
+    
+}
+#contact .details h2{
+    padding: 10px;
+    color: white;
+    
+}
+#contact .details p{
+    padding: 10px 0 0 30px;
+    color: white;
+}
+
+#contact .licence{
+    background: rgb(0, 68, 0);
+    width:100vw;
+    height: 30px;
+    color: white;
+    padding: 5px;
+}
+#contact .licence p{
+    line-height: 30px;
+}
+
+
 
 
 
