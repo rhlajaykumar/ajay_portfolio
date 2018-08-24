@@ -13,7 +13,7 @@
 
 <body>
 	<!-- Header Showcase -->
-	<header id="showcase" class="grid">
+	<header id="showcase">
 		<div class="bg-img"></div>
 		<div class="content-wrap">
 			<img src="https://images.pexels.com/photos/266246/pexels-photo-266246.jpeg?cs=srgb&dl=facebook-instagram-logos-266246.jpg&fm=jpg"
@@ -22,21 +22,22 @@
 			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis inventore animi labore, molestiae velit autem?</p>
 		</div>
 	</header>
-	<nav id="nav-bar">
-		<a class="btn" href="#showcase">Ajay</a>
-		<ul>
-			<li><a href="#section-about">About</a></li>
-			<li><a href="#section-projects">Projects</a></li>
-			<li><a href="#section-social">Social</a></li>
-			<li><a href="#section-contact">Contact</a></li>
+	<!-- Navbar -->
+	<nav id="nav-bar" class="nav-flex-container">
+		<ul class="nav-flex">
+			<li><a class="btn" href="#showcase">Ajay</a></li>
+			<li><a class="btn" href="#section-about">About</a></li>
+			<li><a class="btn" href="#section-projects">Projects</a></li>
+			<li><a class="btn" href="#section-social">Social</a></li>
+			<li><a class="btn" href="#section-contact">Contact</a></li>
 		</ul>
 	</nav>
 	<!-- Main area -->
 	<main>
-		<!-- Section A -->
-		<section id="section-about" class="grid">
-			<ul>
-				<li>
+		<!-- Section About -->
+		<section id="section-about">
+			<ul class="grid-about">
+				<li class="li1">
 					<div class="card">
 						<img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="facebook">
 						<div class="card-content">
@@ -45,7 +46,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li class="li2">
 					<div class="card">
 						<img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="facebook">
 						<div class="card-content">
@@ -54,7 +55,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li class="li3">
 					<div class="card">
 						<img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="facebook">
 						<div class="card-content">
@@ -63,7 +64,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li class="li4">
 					<div class="card">
 						<img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="facebook">
 						<div class="card-content">
@@ -72,7 +73,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li class="li5">
 					<div class="card">
 						<img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="facebook">
 						<div class="card-content">
@@ -81,7 +82,7 @@
 						</div>
 					</div>
 				</li>
-				<li>
+				<li class="li6">
 					<div class="card">
 						<img src="https://images.pexels.com/photos/267371/pexels-photo-267371.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="facebook">
 						<div class="card-content">
@@ -95,14 +96,14 @@
 		</section>
 
 		<!-- Section Projects -->
-		<section id="section-projects" class="grid-project">
-			<div class="project-head">
-				<img class="project-img" src="https://images.pexels.com/photos/247772/pexels-photo-247772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-				 alt="">
+		<section id="section-projects" class="grid">
+			<div class="project-head project-img">
+				<div class=""></div>
 				<h2>Projects</h2>
 			</div>
 
-			<ul class="grid">
+			<ul class="grid-project">
+
 				<li>
 					<div class="card">
 						<img src="https://images.pexels.com/photos/174938/pexels-photo-174938.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="project">
@@ -167,37 +168,38 @@
 		</section>
 
 		<!-- Section Social -->
-		<section id="section-social" class="flex-2">
-			<div class="content-wrap">
-				<div class="content-head">
-					<img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="social">
-					<h2>Social media Profile</h2>
-				</div>
-				<div class="content">
-					<ul>
-						<li>
-							<a href="" type="button">linkedin</a>
-						</li>
-						<li>
-							<a href="">github</a>
-						</li>
-						<li>
-							<a href="">facebook</a>
-						</li>
-						<li>
-							<a href="">gmail</a>
-						</li>
-					</ul>
+		<section id="section-social" class="flex-social">
 
-				</div>
+			<div class="content-head">
+				<h2>Social media Profile</h2>
 			</div>
+
+			<div class="content">
+				<ul>
+					<li>
+						<a href="" type="button">linkedin</a>
+					</li>
+					<li>
+						<a href="">github</a>
+					</li>
+					<li>
+						<a href="">facebook</a>
+					</li>
+					<li>
+						<a href="">gmail</a>
+					</li>
+				</ul>
+			</div>
+
+
+
 
 		</section>
 
 	</main>
 
 	<!--footer-->
-	<footer id="section-contact" class="flex-2">
+	<footer id="section-contact" class="flex-footer">
 		<div class="details">
 			<h2>Contact Me</h2>
 			<p>abc@123.com</p>

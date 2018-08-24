@@ -5,12 +5,21 @@
 body {
     font-family: Arial, Helvetica, sans-serif
 }
-
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
 /* header */
 #showcase {
     width: 100%;
     height: 90vh;
     text-align: center;
+    position: relative;
 }
  #showcase .bg-img {
      background: url("../img/ai-codes-coding-247791\ \(1\).jpg");
@@ -19,6 +28,7 @@ body {
      height: 90vh;
      background-position: center;
      background-repeat: no-repeat;
+     background-attachment: fixed;
      background-size: cover;
      z-index: -1;
  }
@@ -41,35 +51,60 @@ body {
     color: white;
  }
 
- /* nav bar */
- #nav-bar {
-     width: 100%;
-     height: 10vh;
-     background: whitesmoke;
+
+ /* Desk top header section*/
+ @media screen and (min-width: 1000px){
+    #showcase .content-wrap img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 5vw;
+    }
+    #showcase .content-wrap p{
+        font-size: 1.2em;
+        font-weight: 100;
+     }
+
  }
 
- #nav-bar .btn{
-    margin: 1px gray solid;
-    color:black;
-    text-decoration: none;
-    padding: 10px;
-    line-height: 10vh;
-    
+ /* Nav bar Responsive*/
+
+ .nav-flex-container {
+     padding: 0;
+     margin: 0;
+ }
+
+ .nav-flex {
+     display: flex ;
+     justify-content: space-around;
+     line-height: 50px;
+     background-color: rgb(166, 207, 226);
+     flex-wrap: wrap;
+ }
+ .nav-flex>li {
+    width: 100%;
+}
+ .nav-flex a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 3px solid rgba(120, 190, 199, 0.425);
+}
+.nav-flex a:hover {
+    border-bottom: 3px solid rgb(243, 76, 10);
+    color: rgb(243, 76, 10);
+}
+/* navbar desktop*/
+@media screen and (min-width: 1000px){
+    .nav-flex {
+        flex-wrap: nowrap;
+    }
 }
 
-#nav-bar ul {
-    list-style: none;
-    display: inline-block;
-}
-#nav-bar ul li {
-    display: inline-block;
-}
-
-#nav-bar ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-}
+ 
+ 
 
 /* Section About */
 #section-about {
@@ -89,6 +124,21 @@ body {
 #section-about .card{
     padding: 30px;
 }
+/*Desktop about section*/
+@media screen and (min-width: 1000px){
+    .grid-about {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+    }
+
+    #section-about img {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 5vw;
+    }
+
+}
 
 /* Section project */
 
@@ -96,22 +146,31 @@ body {
     background-color: rgb(166, 207, 226);
     width: 100%;
     height: auto;
+    margin: 0;
 }
 #section-projects .project-head{
     position: relative;
+    width: 100%;
+    height: 300px;
 }
 #section-projects>.project-head>h2{
     position: absolute;
-    top: 100px;
-    left: 150px;
+    width: 100%;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
     font-size: 2em;
     text-shadow: 10px white;
 
 }
 
 #section-projects .project-img {
-    width: 100%;
-    position: sticky;
+    background-image: url(https://images.pexels.com/photos/247772/pexels-photo-247772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
 }
 #section-projects ul {
     padding: 0;
@@ -119,10 +178,8 @@ body {
 }
 #section-projects li {
     background-color: white;
-    width: 95vw;
-    height: auto;
     border: 0;
-    margin: 0 auto;
+    margin: 10px;
 }
 #section-projects .card-content {
     
@@ -146,121 +203,143 @@ body {
 
 /* Section project for desktop */
 @media screen and (min-width: 1000px){
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100vw;
-    }
     #section-projects .project-img {
-        height: 50vh;
-        background-size: cover;
+        height: 60vh;
     }
     #section-projects>.project-head>h2{
-        top: 45%;
-        left: 45%;
-    
+        height: 60vh;
     }
-    
+    .grid-project {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     #section-projects ul img{
-        width: auto;
-        height: 40vh;
-    }
-    #section-projects .card {
-        display: inline-block;
-        height: auto;
-        width: 30vw;
-        margin: 0;
-    }
-    #section-projects .card-heading {
-        padding: 0 10px;
-        width: auto;
-    }
-    
-    #section-projects p {
-        padding: 10px;
-        width: auto;
-    }
-    #section-projects ul {
-        display: inline-block;
-        width: auto;
-    }
-    #section-projects li {
-        display: inline-block;
-        width: auto;
+        width: 100%;
+        height: 25vw;
     }
 }
+
 
 /* Section social media */
 
-#section-social .content-wrap{
-    background:  rgb(166, 207, 226);
-    height: auto;
+section {
+    margin: 0;
+    padding: 0;
 }
-#section-social .content-wrap .content-head{
+.flex-social {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0;
+    height: 400px;
+    background-color: rgb(166, 207, 226);
+    padding: 10px
+}
+.flex-social .content-head {
     position: relative;
-    height: 60vw;
+    background-image: url(https://images.pexels.com/photos/433617/pexels-photo-433617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    width: 95%;
+    height: 190px;
 }
-#section-social .content-wrap .content-head img{
+.flex-social .content-head h2 {
+    display: block;
+    height: 190px;
+    line-height: 190px;
+    text-align: center;
+    
+}
+.flex-social .content {
     width: 100%;
-    height: 60vw;
+    height: 180px;
+    margin-top: 10px;
+    background-color: white;
 }
-#section-social .content-wrap .content-head h2{
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    color: white;
+.flex-social .content ul li{
+    display: block;
+    height: 45px;
+
 }
-#section-social .content-wrap .content ul{
-    list-style: none;
-    height: auto;
-    padding: 10px 5vw 10px 5vw;
+.flex-social .content ul li a{
+    border: 1px solid rgb(65, 108, 156);
+    display: block;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+
 }
 
-#section-social .content-wrap .content a{
-    text-decoration: none;
-    color:black;
-    padding: 20px 10px 20px 10px;
+
+/* social desktop and tablet*/
+@media screen and (min-width: 1000px){
+    .flex-social {
+        flex-wrap: nowrap;
+    }
+    .flex-social .content-head {
+        width: 50%;
+        height: auto;
+    }
+    .flex-social .content-head h2 {
+        height: 380px;
+        line-height: 380px;
+        font-size: 2em;
+        
+    }
+    .flex-social .content {
+        width: 50%;
+        height: auto;
+        background-color: white;
+        margin-top: 0;
+    }
+    .flex-social .content ul li{
+        height: 100px;
+    
+    }
+    .flex-social .content ul li a{
+        height:100px;
+        text-align: center;
+        line-height: 100px;
+    
+    }
+
 }
-#section-social .content-wrap .content li{
-    display: block;
-    background: white;
-    border: 1px rgb(240, 237, 237) solid;
-    width: 90vw;
-    margin: 0 auto;
-}
+
+
+
+
 
 /* Footer */
 
-#section-contact {
-    width: 100vw;
-    background: rgb(79, 187, 79);
-    height: auto;
+.flex-footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    background-color: rgb(65, 108, 156);
+    flex-wrap: wrap;
 }
-
-#section-contact .details{
-    width: 100vw;
-    height: 120px;
-    
-}
-#section-contact .details h2{
+.flex-footer .details{
     padding: 10px;
-    color: white;
-    
+    width: 50%;
 }
-#section-contact .details p{
-    padding: 10px 0 0 30px;
-    color: white;
+.flex-footer .licence{
+    padding: 10px;
+    width: 50%;
+    line-height: auto;
 }
-
-#section-contact .licence{
-    background: rgb(0, 68, 0);
-    width:100vw;
-    height: 30px;
-    color: white;
-    padding: 5px;
-}
-#section-contact .licence p{
-    line-height: 30px;
+@media screen and (min-width: 768px){
+    .flex-footer {
+        flex-wrap: nowrap;
+    }
+    .flex-footer .details{
+        text-align: center;
+    }
+    .flex-footer .licence{
+        text-align: center;
+    }
 }
 
 
