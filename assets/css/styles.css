@@ -111,6 +111,7 @@ body {
 
 #section-projects .project-img {
     width: 100%;
+    position: sticky;
 }
 #section-projects ul {
     padding: 0;
@@ -141,6 +142,52 @@ body {
 
 #section-projects p {
     padding: 10px;
+}
+
+/* Section project for desktop */
+@media screen and (min-width: 1000px){
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100vw;
+    }
+    #section-projects .project-img {
+        height: 50vh;
+        background-size: cover;
+    }
+    #section-projects>.project-head>h2{
+        top: 45%;
+        left: 45%;
+    
+    }
+    
+    #section-projects ul img{
+        width: auto;
+        height: 40vh;
+    }
+    #section-projects .card {
+        display: inline-block;
+        height: auto;
+        width: 30vw;
+        margin: 0;
+    }
+    #section-projects .card-heading {
+        padding: 0 10px;
+        width: auto;
+    }
+    
+    #section-projects p {
+        padding: 10px;
+        width: auto;
+    }
+    #section-projects ul {
+        display: inline-block;
+        width: auto;
+    }
+    #section-projects li {
+        display: inline-block;
+        width: auto;
+    }
 }
 
 /* Section social media */
