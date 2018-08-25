@@ -137,6 +137,10 @@ a{
         height: 10vw;
         border-radius: 5vw;
     }
+    #section-about p {
+        text-align: left;
+        padding-left: 20%;
+    }
 
 }
 
@@ -164,6 +168,8 @@ a{
     background: white;
     padding: 0;
 }
+
+
 .grid-project .card .card-img{
     height: 50%;
     background-image: url(https://images.pexels.com/photos/1124066/pexels-photo-1124066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
@@ -171,6 +177,20 @@ a{
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+.grid-project .card .card-img-lms{
+    background-image: url(https://libraryapps.fairfield.edu/cdn/images/stacks.jpg);    
+}
+.grid-project .card .card-img-anime{
+    
+}
+.grid-project .card .card-img-scraper{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFfgOYlvFEhvHsuB19BbIoAE-rZNkqof7Y95vXbxs1Q19zDgsSw);    
+}
+.grid-project .card .card-img-solar{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFugN0CbuGMmChuFtd29UuRtOOzom3V_Ju1iW1rdHvyEzoRs9cNg);    
+}
+.grid-project .card .card-img-line{    
 }
 .grid-project .card .card-content{
     height: 50%;
