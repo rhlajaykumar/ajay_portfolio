@@ -51,39 +51,24 @@ a{
     color: white;
  }
 
-
- /* Desk top header section*/
- @media screen and (min-width: 1000px){
-    #showcase .content-wrap img{
-        width: 10vw;
-        height: 10vw;
-        border-radius: 5vw;
-    }
-    #showcase .content-wrap p{
-        font-size: 1.2em;
-        font-weight: 100;
-     }
-
- }
-
  /* Nav bar Responsive*/
 
- .nav-flex-container {
+ .nav-container {
      padding: 0;
      margin: 0;
  }
 
- .nav-flex {
+ .nav-items {
      display: flex ;
      justify-content: space-around;
      line-height: 50px;
      background-color: rgb(166, 207, 226);
      flex-wrap: wrap;
  }
- .nav-flex>li {
+ .nav-items>li {
     width: 100%;
 }
- .nav-flex a {
+ .nav-items a {
     display: inline-block;
     width: 100%;
     text-align: center;
@@ -92,17 +77,10 @@ a{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-bottom: 3px solid rgba(120, 190, 199, 0.425);
 }
-.nav-flex a:hover {
+.nav-items a:hover {
     border-bottom: 3px solid rgb(243, 76, 10);
     color: rgb(243, 76, 10);
 }
-/* navbar desktop*/
-@media screen and (min-width: 768px){
-    .nav-flex {
-        flex-wrap: nowrap;
-    }
-}
-
  
  
 
@@ -124,9 +102,154 @@ a{
 #section-about .card{
     padding: 30px;
 }
-/*Desktop about section*/
+
+/* Section project */
+.project-container {
+    display: grid;
+    background: rgb(157, 194, 211);
+}
+.project-container>div {
+        
+    border: 1px solid rgb(151, 172, 185);
+}
+.project-container .project-head{
+    text-align: center;
+    background-image: url(https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+.project-container .card {
+    height: 200px;
+    margin: 5px;
+    background: white;
+    padding: 0;
+}
+
+
+.project-container .card .card-img{
+    height: 50%;
+    background-image: url(https://images.pexels.com/photos/1124066/pexels-photo-1124066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.project-container .card .card-img-lms{
+    background-image: url(https://libraryapps.fairfield.edu/cdn/images/stacks.jpg);    
+}
+.project-container .card .card-img-anime{
+
+}
+.project-container .card .card-img-scraper{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFfgOYlvFEhvHsuB19BbIoAE-rZNkqof7Y95vXbxs1Q19zDgsSw);    
+}
+.project-container .card .card-img-solar{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFugN0CbuGMmChuFtd29UuRtOOzom3V_Ju1iW1rdHvyEzoRs9cNg);    
+}
+.project-container .card .card-img-line{    
+}
+.project-container .card .card-content{
+    height: 50%;
+    padding: 5px;   
+}
+.project-container .card .card-content p{
+    padding: 5px;   
+}
+
+
+
+
+/* Section social media */
+
+section {
+    margin: 0;
+    padding: 0;
+}
+.social-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0;
+    height: 400px;
+    background-color: rgb(166, 207, 226);
+    padding: 10px
+}
+.social-container .content-head {
+    position: relative;
+    background-image: url(http://anthillonline.com/wp-content/uploads/2017/05/social-media.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    width: 95%;
+    height: 190px;
+}
+.social-container .content-head h2 {
+    display: block;
+    height: 190px;
+    line-height: 190px;
+    text-align: center;
+    font-weight: 600;
+    
+}
+.social-container .content {
+    width: 100%;
+    height: 180px;
+    margin-top: 10px;
+    background-color: white;
+}
+.social-container .content ul li{
+    display: block;
+    height: 45px;
+
+}
+.social-container .content ul li a{
+    border: 1px solid rgb(65, 108, 156);
+    display: block;
+    height:45px;
+    text-align: center;
+    line-height: 45px;
+
+}
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    background-color: rgb(65, 108, 156);
+    flex-wrap: wrap;
+}
+.footer .details{
+    padding: 10px;
+    width: 50%;
+}
+.footer .licence{
+    padding: 10px;
+    width: 50%;
+    line-height: auto;
+}
 @media screen and (min-width: 768px){
-    .grid-about {
+    /*-------------------------- Header --------------------------------------------*/
+    #showcase .content-wrap img{
+        width: 10vw;
+        height: 10vw;
+        border-radius: 5vw;
+    }
+    #showcase .content-wrap p{
+        font-size: 1.2em;
+        font-weight: 100;
+     }
+    /*-------------------------- Nav-bar ---------------------------------------------*/
+    .nav-items {
+        flex-wrap: nowrap;
+    }
+    /*-------------------------- About ------------------------------------------------*/
+    .about {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
@@ -142,77 +265,16 @@ a{
         padding-left: 20%;
     }
 
-}
 
-/* Section project */
-.grid-project {
-    display: grid;
-    background: rgb(157, 194, 211);
-}
-.grid-project>div {
-        
-    border: 1px solid rgb(151, 172, 185);
-}
-.grid-project .project-head{
-    text-align: center;
-    background-image: url(https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-}
-.grid-project .card {
-    height: 200px;
-    margin: 5px;
-    background: white;
-    padding: 0;
-}
-
-
-.grid-project .card .card-img{
-    height: 50%;
-    background-image: url(https://images.pexels.com/photos/1124066/pexels-photo-1124066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-.grid-project .card .card-img-lms{
-    background-image: url(https://libraryapps.fairfield.edu/cdn/images/stacks.jpg);    
-}
-.grid-project .card .card-img-anime{
-    
-}
-.grid-project .card .card-img-scraper{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFfgOYlvFEhvHsuB19BbIoAE-rZNkqof7Y95vXbxs1Q19zDgsSw);    
-}
-.grid-project .card .card-img-solar{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFugN0CbuGMmChuFtd29UuRtOOzom3V_Ju1iW1rdHvyEzoRs9cNg);    
-}
-.grid-project .card .card-img-line{    
-}
-.grid-project .card .card-content{
-    height: 50%;
-    padding: 5px;   
-}
-.grid-project .card .card-content p{
-    padding: 5px;   
-}
-
-
-
-
-
-@media screen and (min-width: 768px){
-    .grid-project {
+    /*-------------------------- Project ----------------------------------------*/
+    .project-container {
         grid-template-columns: repeat(3, 1fr);
     }
-    .grid-project>div {
+    .project-container>div {
         
         margin: 5px;
     }
-    .grid-project .project-head{
+    .project-container .project-head{
         grid-column: 1/4;
         padding: 150px;
         text-align: center;
@@ -222,131 +284,50 @@ a{
         background-size: cover;
         background-attachment: fixed;
     }
-    .grid-project .card {
+    .project-container .card {
         height: 300px;
     }
-}
 
-
-
-/* Section social media */
-
-section {
-    margin: 0;
-    padding: 0;
-}
-.flex-social {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin:0;
-    height: 400px;
-    background-color: rgb(166, 207, 226);
-    padding: 10px
-}
-.flex-social .content-head {
-    position: relative;
-    background-image: url(https://images.pexels.com/photos/433617/pexels-photo-433617.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10px;
-    width: 95%;
-    height: 190px;
-}
-.flex-social .content-head h2 {
-    display: block;
-    height: 190px;
-    line-height: 190px;
-    text-align: center;
-    
-}
-.flex-social .content {
-    width: 100%;
-    height: 180px;
-    margin-top: 10px;
-    background-color: white;
-}
-.flex-social .content ul li{
-    display: block;
-    height: 45px;
-
-}
-.flex-social .content ul li a{
-    border: 1px solid rgb(65, 108, 156);
-    display: block;
-    height:45px;
-    text-align: center;
-    line-height: 45px;
-
-}
-
-
-/* social desktop and tablet*/
-@media screen and (min-width: 768px){
-    .flex-social {
+    /*-------------------------- Social --------------------------------------*/
+    .social-container {
         flex-wrap: nowrap;
     }
-    .flex-social .content-head {
+    .social-container .content-head {
         width: 50%;
         height: auto;
     }
-    .flex-social .content-head h2 {
+    .social-container .content-head h2 {
         height: 380px;
         line-height: 380px;
         font-size: 2em;
         
     }
-    .flex-social .content {
+    .social-container .content {
         width: 50%;
         height: auto;
         background-color: white;
         margin-top: 0;
     }
-    .flex-social .content ul li{
+    .social-container .content ul li{
         height: 100px;
     
     }
-    .flex-social .content ul li a{
+    .social-container .content ul li a{
         height:100px;
         text-align: center;
         line-height: 100px;
     
     }
 
-}
+    /*--------------------------- Footer --------------------------------------------*/
 
-
-
-
-
-/* Footer */
-
-.flex-footer {
-    display: flex;
-    justify-content: space-around;
-    margin: 0;
-    background-color: rgb(65, 108, 156);
-    flex-wrap: wrap;
-}
-.flex-footer .details{
-    padding: 10px;
-    width: 50%;
-}
-.flex-footer .licence{
-    padding: 10px;
-    width: 50%;
-    line-height: auto;
-}
-@media screen and (min-width: 768px){
-    .flex-footer {
+    .footer {
         flex-wrap: nowrap;
     }
-    .flex-footer .details{
+    .footer .details{
         text-align: center;
     }
-    .flex-footer .licence{
+    .footer .licence{
         text-align: center;
     }
 }
