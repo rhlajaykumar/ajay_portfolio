@@ -97,7 +97,7 @@ a{
     color: rgb(243, 76, 10);
 }
 /* navbar desktop*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 768px){
     .nav-flex {
         flex-wrap: nowrap;
     }
@@ -125,7 +125,7 @@ a{
     padding: 30px;
 }
 /*Desktop about section*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 768px){
     .grid-about {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -141,83 +141,72 @@ a{
 }
 
 /* Section project */
-
-#section-projects {
-    background-color: rgb(166, 207, 226);
-    width: 100%;
-    height: auto;
-    margin: 0;
+.grid-project {
+    display: grid;
+    background: rgb(157, 194, 211);
 }
-#section-projects .project-head{
-    position: relative;
-    width: 100%;
-    height: 300px;
+.grid-project>div {
+        
+    border: 1px solid rgb(151, 172, 185);
 }
-#section-projects>.project-head>h2{
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    line-height: 300px;
+.grid-project .project-head{
     text-align: center;
-    font-size: 2em;
-    text-shadow: 10px white;
-
-}
-
-#section-projects .project-img {
-    background-image: url(https://images.pexels.com/photos/247772/pexels-photo-247772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-    background-attachment: fixed;
+    background-image: url(https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    background-attachment: fixed;
+    padding: 100px 0;
 }
-#section-projects ul {
+.grid-project .card {
+    height: 200px;
+    margin: 5px;
+    background: white;
     padding: 0;
-    list-style: none;
 }
-#section-projects li {
-    background-color: white;
-    border: 0;
-    margin: 10px;
-}
-#section-projects .card-content {
+.grid-project .card .card-img{
+    height: 50%;
+    background-image: url(https://images.pexels.com/photos/1124066/pexels-photo-1124066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     
-    height: auto;
-    border: 0;
-    margin: 10px auto;
+}
+.grid-project .card .card-content{
+    height: 50%;
+    padding: 5px;   
+}
+.grid-project .card .card-content p{
+    padding: 5px;   
 }
 
-#section-projects ul img{
-    width: 100%;
-    height: 60vw;
-}
 
-#section-projects .card-heading {
-    padding: 0 10px;
-}
 
-#section-projects p {
-    padding: 10px;
-}
 
-/* Section project for desktop */
-@media screen and (min-width: 1000px){
-    #section-projects .project-img {
-        height: 60vh;
-    }
-    #section-projects>.project-head>h2{
-        height: 60vh;
-    }
+
+@media screen and (min-width: 768px){
     .grid-project {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    #section-projects ul img{
-        width: 100%;
-        height: 25vw;
+    .grid-project>div {
+        
+        margin: 5px;
+    }
+    .grid-project .project-head{
+        grid-column: 1/4;
+        padding: 150px;
+        text-align: center;
+        background-image: url(https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .grid-project .card {
+        height: 300px;
     }
 }
+
 
 
 /* Section social media */
@@ -275,7 +264,7 @@ section {
 
 
 /* social desktop and tablet*/
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 768px){
     .flex-social {
         flex-wrap: nowrap;
     }
