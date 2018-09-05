@@ -43,11 +43,15 @@ a{
 }
 
 #showcase .content-wrap h1{
-    padding-top:2vh; 
+    padding-top: 2vh;
+    display: block;
+    width: auto;
+    background: rgb(37, 37, 37); 
     color: white;
 }
 #showcase .content-wrap p{
-    padding-top:2vh;
+    background: rgb(37, 37, 37);
+    padding:2vh;
     color: white;
  }
 
@@ -108,18 +112,31 @@ a{
     display: grid;
     background: rgb(157, 194, 211);
 }
+.project-head h2 {
+    margin-top: 18vh;
+    padding: 5px 0;
+    display: inline-block;
+    height: 24px;
+    width: 100%;
+    background: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    
+}
 .project-container>div {
         
     border: 1px solid rgb(151, 172, 185);
 }
 .project-container .project-head{
     text-align: center;
-    background-image: url(https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url("../img/project-bg.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    padding: 100px 0;
+    height:40vh; 
+    
 }
 .project-container .card {
     height: 200px;
@@ -131,25 +148,26 @@ a{
 
 .project-container .card .card-img{
     height: 50%;
-    background-image: url(https://images.pexels.com/photos/1124066/pexels-photo-1124066.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-image: url("../img/card-img.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 .project-container .card .card-img-lms{
-    background-image: url(https://libraryapps.fairfield.edu/cdn/images/stacks.jpg);    
+    background-image: url("../img/lms-img.jpg");    
 }
 .project-container .card .card-img-anime{
-
+    background-image: url("../img/anime-img.jpeg");
 }
 .project-container .card .card-img-scraper{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyFfgOYlvFEhvHsuB19BbIoAE-rZNkqof7Y95vXbxs1Q19zDgsSw);    
+    background-image: url("../img/scraper-img.png");    
 }
 .project-container .card .card-img-solar{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFugN0CbuGMmChuFtd29UuRtOOzom3V_Ju1iW1rdHvyEzoRs9cNg);    
+    background-image: url("../img/solar-img.jpg");    
 }
-.project-container .card .card-img-line{    
+.project-container .card .card-img-line{  
+    background-image: url("../img/robot-img.jpg");  
 }
 .project-container .card .card-content{
     height: 50%;
@@ -179,19 +197,21 @@ section {
 }
 .social-container .content-head {
     position: relative;
-    background-image: url(http://anthillonline.com/wp-content/uploads/2017/05/social-media.jpg);
+    background-image: url("../img/social-bg.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10px;
     width: 95%;
     height: 190px;
 }
 .social-container .content-head h2 {
-    display: block;
-    height: 190px;
-    line-height: 190px;
+    margin-top: 15%;
+    padding: 5px 0;
+    display: inline-block;
+    height: 24px;
+    width: 100%;
+    background: white;
     text-align: center;
     font-weight: 600;
     
@@ -276,13 +296,16 @@ section {
     }
     .project-container .project-head{
         grid-column: 1/4;
-        padding: 150px;
         text-align: center;
-        background-image: url(https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+       
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
+    }
+    .project-container .project-head h2{
+        font-size: 32px;
+        height: 32px;
     }
     .project-container .card {
         height: 300px;
@@ -297,8 +320,9 @@ section {
         height: auto;
     }
     .social-container .content-head h2 {
-        height: 380px;
-        line-height: 380px;
+        margin-top: 30%;
+        height: 2em;
+        line-height: 2em;
         font-size: 2em;
         
     }
